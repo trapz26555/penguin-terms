@@ -92,7 +92,7 @@ TERMS_HTML = """
 
   .check-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     background: #171d23;
     border-radius: 8px;
@@ -112,6 +112,11 @@ TERMS_HTML = """
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2px;
+  }
+  .check-item .check-text {
+    flex: 1;
+    min-width: 0;
   }
 
   .subgrid {
@@ -172,8 +177,8 @@ TERMS_HTML = """
         <span class="section-title">Refund Policy</span>
       </div>
       <p><strong>Refunds are only issued if:</strong></p>
-      <div class="check-item"><span class="tick">✓</span> The order was <strong>cancelled</strong> before it was fulfilled, or</div>
-      <div class="check-item"><span class="tick">✓</span> You were <strong>unable to complete or receive</strong> the order on our end.</div>
+      <div class="check-item"><span class="tick">✓</span><span class="check-text">The order was <strong>cancelled</strong> before it was fulfilled, or</span></div>
+      <div class="check-item"><span class="tick">✓</span><span class="check-text">You were <strong>unable to complete or receive</strong> the order on our end.</span></div>
       <p>Outside of these cases, <strong>payments are final</strong>. No refunds for a change of mind once an order is in progress or delivered.</p>
     </div>
 
